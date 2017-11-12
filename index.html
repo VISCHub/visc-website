@@ -36,18 +36,19 @@
         var $ = ml_jQuery || jQuery;
         var formEle = $('#' + formId);
 
-        alert(formEle.serialize());
         $.ajax({
             type        : 'POST',
             url         : 'https://app.mailerlite.com/webforms/submit/k6s7n7',
             data        : formEle.serialize()
         })
         .done(function(data) {
-            alert('Well done!');
-            formEle.reset();
+            formEle.fadeOut();
+
+            $(':input', formEle).not(':button, :submit, :reset, :hidden')
+                .removeAttr('checked').removeAttr('selected')
+                .not('‌​:checkbox, :radio, select').val('');
         })
         .fail(function(data) {
-            alert('Got an error!');
             console.log(data);
         });
 
