@@ -1,0 +1,17 @@
+body {
+    /*background: url(../img/chain-new_1920_01.jpg);*/
+    background-color: #000;
+}
+
+a i.fa {
+    color: #fff;
+    font-size: 48pt;
+}
+
+.card-custom-center-content {
+    text-align: center;
+}
+
+.top-buffer-150 {
+    margin-top: 150px;
+}
