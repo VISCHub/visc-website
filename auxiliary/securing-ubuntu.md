@@ -12,7 +12,11 @@
 * https://serverfault.com/questions/617081/how-to-use-both-allowgroups-and-allowusers-in-sshd-config
 * http://blog.siphos.be/2015/08/switching-openssh-to-ed25519-keys/
 * https://unix.stackexchange.com/questions/19333/disable-a-users-login-without-disabling-the-account
-
+* https://insights.ubuntu.com/2016/12/08/ubuntu-16-04-lts-security-a-comprehensive-overview/
+* https://linux-audit.com/ubuntu-server-hardening-guide-quick-and-secure/
+* https://www.thefanclub.co.za/how-to/how-secure-ubuntu-1604-lts-server-part-1-basics
+* https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04
+* https://www.digitalocean.com/community/questions/best-practices-for-hardening-new-sever-in-2017
 
 ## NginX & Let's Encrypt
 
