@@ -1,0 +1,101 @@
+<html>
+<head>
+    <title>VISC - Vietnam's Initiative for Smart Contracts</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/mailerlite.css">
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+    <!-- mailerlite form -->
+    <!-- MailerLite Universal -->
+    <script>
+    (function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
+    var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
+    f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
+    var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
+    _.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+
+    var ml_account = ml('accounts', '930047', 'e2t5w9m3o0', 'load');
+    </script>
+
+    <script>
+    var ml_webform_638612 = ml_account('webforms', '638612', 'p4d6m6', 'load');
+    ml_webform_638612('animation', 'fadeIn');
+    </script>
+
+    <a href="javascript:;" onclick="ml_webform_638612('show')"><button>Subscribe me</button></a>
+
+    <!-- End MailerLite Universal -->
+
+    <script>
+    function doSubmit(formId) {
+        var $ = ml_jQuery || jQuery;
+        var formEle = $('#' + formId);
+
+        $.ajax({
+            type        : 'POST',
+            url         : 'https://app.mailerlite.com/webforms/submit/k6s7n7',
+            data        : formEle.serialize()
+        })
+        .done(function(data) {
+            formEle.fadeOut();
+
+            $(':input', formEle).not(':button, :submit, :reset, :hidden')
+                .removeAttr('checked').removeAttr('selected')
+                .not('‌​:checkbox, :radio, select').val('');
+        })
+        .fail(function(data) {
+            console.log(data);
+        });
+
+        return false;
+    }
+    </script>
+
+    <div id="mlb2-6760026" class="ml-subscribe-form ml-subscribe-form-6760026">
+        <div class="ml-vertical-align-center">
+            <div class="subscribe-form ml-block-success" style="display:none">
+                <div class="form-section">
+                    <h4>VISC Newsletter</h4>
+                    <p>Thank you! You have successfully subscribed to VISC newsletter.</p>
+                </div>
+            </div>
+            <form class="ml-block-form" data-id="638516" data-code="k6s7n7" id="custom-form-638516">
+                <div class="subscribe-form">
+                    <div class="form-section mb10">
+                        <h4>VISC Newsletter</h4>
+                        <p>Blockchain, Smart Contracts and Cryptocurrencies</p>
+                    </div>
+                    <div class="form-section">
+                        <div class="form-group ml-field-name">
+                            <input type="text" name="fields[name]" class="form-control" placeholder="Name" value="" autocomplete="name" x-autocompletetype="name" spellcheck="false" autocapitalize="off" autocorrect="off">
+                        </div>
+                        <div class="form-group ml-field-email ml-validate-required ml-validate-email">
+                            <input type="email" name="fields[email]" class="form-control" placeholder="Email*" value="" autocomplete="email" x-autocompletetype="email" spellcheck="false" autocapitalize="off" autocorrect="off">
+                        </div>
+                    </div>
+                    <input type="hidden" name="ml-submit" value="1" />
+                    <button type="button" class="primary" onclick="doSubmit('custom-form-638516')">Subscribe</button>
+                    <button disabled="disabled" style="display: none;" type="button" class="loading">
+                        <img src="https://static.mailerlite.com/images/rolling@2x.gif" width="20" height="20" style="width: 20px; height: 20px;">
+                    </button>
+                </div>
+            </form>
+            <script>
+                function ml_webform_success_6760026() {
+                    var $ = ml_jQuery || jQuery;
+
+                    $('.ml-subscribe-form-6760026 .ml-block-success').show();
+                    $('.ml-subscribe-form-6760026 .ml-block-form').hide();
+                };
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://static.mailerlite.com/js/w/webforms.min.js?v3772b61f1ec61c541c401d4eadfdd02f"></script>
+</body>
+
+</html>
