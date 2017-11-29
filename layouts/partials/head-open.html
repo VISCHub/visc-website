@@ -1,0 +1,18 @@
+<!-- Copied from https://github.com/vietlq/vietlq.github.io/blob/source/layouts/partials/single_meta.html -->
+<!-- For more info, read https://vietlq.github.io/2017/04/30/access-hugo-page-variables/ -->
+
+<meta name="description" content='{{ replaceRE "\n" "" (.Description | default .Summary | default "Tutorials, news on Blockchain, Cryptocurrencies and Smart Contracts") }}'>
+
+<meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}">
+<meta property="og:type" content="article">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.thumbnail | default "img/default.png" }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:description" content='{{ replaceRE "\n" " " (.Description | default .Summary | default "Tutorials, news on Blockchain, Cryptocurrencies and Smart Contracts") }}'>
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="{{ .Site.Title }}">
+<meta name="twitter:url" content="{{ .Permalink }}">
+<meta name="twitter:title" content="{{ .Title }} - {{ .Site.Title }}">
+<meta name="twitter:description" content='{{ replaceRE "\n" " " (.Description | default .Summary | default "Tutorials, news on Blockchain, Cryptocurrencies and Smart Contracts") }}'>
+<meta name="twitter:image" content="{{ .Site.BaseURL }}{{ .Params.thumbnail | default "img/default.png" }}">
