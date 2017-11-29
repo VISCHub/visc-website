@@ -52,3 +52,9 @@ googleAnalytics = ""
     url = "https://www.facebook.com/groups/VISCHub/"
     name = "facebook"
     weight = 3
+
+[[menu.icon]]
+    url = "javascript:;"
+    name = "envelope-o"
+    weight = 4
+    identifier = "nav-icon-envelop"
