@@ -3,9 +3,12 @@
     data-dojo-config="usePlainJson: true, isDebug: false"></script>
 <script type="text/javascript">
 function showMCPopup() {
-    document.cookie = "MCPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
-    document.cookie = "MCPopupSubscribed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
-    document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+    // Pay special attention to the path=/
+    // It is required to override cookie on the whole sub-domain.
+    // Without path=/ the pop-up will not show up on non / URLs.
+    document.cookie = "MCPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+    document.cookie = "MCPopupSubscribed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+    document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
 
     require(
         ["mojo/signup-forms/Loader"],
@@ -17,6 +20,7 @@ function showMCPopup() {
 </script>
 <script type="text/javascript">
 $(document).ready(function() {
+    //$('#nav-icon-envelope').attr('onclick', 'showMCPopup()');
     $('#nav-icon-envelope').on('click', showMCPopup);
 });
 </script>
