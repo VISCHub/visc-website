@@ -3,7 +3,7 @@
 
 <meta name="description" content='{{ replaceRE "\n" "" (.Description | default .Summary | default "Tutorials, news on Blockchain, Cryptocurrencies and Smart Contracts") }}'>
 
-<meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}">
+<meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}">
 <meta property="og:type" content="article">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.thumbnail | default "img/default.png" }}">
@@ -13,6 +13,6 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="{{ .Site.Title }}">
 <meta name="twitter:url" content="{{ .Permalink }}">
-<meta name="twitter:title" content="{{ .Title }} - {{ .Site.Title }}">
+<meta name="twitter:title" content="{{ .Title }} | {{ .Site.Title }}">
 <meta name="twitter:description" content='{{ replaceRE "\n" " " (.Description | default .Summary | default "Tutorials, news on Blockchain, Cryptocurrencies and Smart Contracts") }}'>
 <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ .Params.thumbnail | default "img/default.png" }}">
