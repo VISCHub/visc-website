@@ -3,6 +3,7 @@ title: "MailChimp Pop-up on Click"
 date: 2017-11-26T19:30:04Z
 tags: ["visc", "mailchimp", "hacks", "tips"]
 draft: false
+thumbnail: "img/post/0001-mailchimp-popup.png"
 ---
 
 # MailChimp Pop-up on Click
