@@ -12,9 +12,11 @@ function showMCPopup() {
         function(L) {
             L.start({"baseUrl":"mc.us17.list-manage.com","uuid":"77bcb675fd16363497240bd82","lid":"810e3181e7"}) });
 
-    return true;
+    return false;
 }
 </script>
 <script type="text/javascript">
-$('#nav-icon-envelop').on('click', showMCPopup);
+$(document).ready(function() {
+    $('#nav-icon-envelope').on('click', showMCPopup);
+});
 </script>

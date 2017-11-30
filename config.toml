@@ -57,4 +57,4 @@ googleAnalytics = ""
     url = "javascript:;"
     name = "envelope-o"
     weight = 4
-    identifier = "nav-icon-envelop"
+    identifier = "nav-icon-envelope"
