@@ -1,4 +1,6 @@
 /*
+https://developers.facebook.com/docs/plugins/like-button
+
 https://developers.facebook.com/apps/436586203405480/fb-login/quickstart/
 
 3. Check Login Status
