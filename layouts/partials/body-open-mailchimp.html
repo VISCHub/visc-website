@@ -1,0 +1,28 @@
+<script type="text/javascript"
+    src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js"
+    data-dojo-config="usePlainJson: true, isDebug: false"></script>
+<script type="text/javascript">
+function showMCPopup() {
+    // Pay special attention to the path=/
+    // It is required to override cookie on the whole sub-domain.
+    // Without path=/ the pop-up will not show up on non / URLs.
+    document.cookie = "MCPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+    document.cookie = "MCPopupSubscribed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+    document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+
+    require(
+        ["mojo/signup-forms/Loader"],
+        function(L) {
+            L.start({"baseUrl":"mc.us17.list-manage.com","uuid":"77bcb675fd16363497240bd82","lid":"810e3181e7"})
+        }
+    );
+
+    return false;
+}
+</script>
+<script type="text/javascript">
+$(document).ready(function() {
+    //$('#nav-icon-envelope').attr('onclick', 'showMCPopup()');
+    $('#nav-icon-envelope').on('click', showMCPopup);
+});
+</script>
