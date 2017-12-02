@@ -1,6 +1,13 @@
 /*
 https://developers.facebook.com/docs/plugins/like-button
 
+https://developers.facebook.com/apps/436586203405480/fb-login/settings/
+https://developers.facebook.com/apps/436586203405480/review-status/
+
+https://auth0.com/docs/connections/social/facebook
+*/
+
+/*
 https://developers.facebook.com/apps/436586203405480/fb-login/quickstart/
 
 3. Check Login Status
