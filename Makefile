@@ -4,6 +4,7 @@ build:
 	#hugo -b 'https://visc.network/' --canonifyURLs -d _dsite
 	hugo -b '/' -d _dsite
 	cp -prf data/visc.network/.well-known _dsite/
+	cp dat.json _dsite/
 
 clean:
 	rm -rf _dsite/*
